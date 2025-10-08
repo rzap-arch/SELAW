@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - SELAW</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #f9fafc;
+      color: #0a2342;
+    }
+    header {
+      background-color: #0a2342;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #ffcc00;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+    }
+    h1 {
+      color: #0a2342;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    th {
+      background-color: #0a2342;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f4f7;
+    }
+    .status {
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+    }
+    .review { color: #0a2342; background-color: #e1ecff; }
+    .paraf { color: #d97706; background-color: #fff7e0; }
+    .selesai { color: #166534; background-color: #dcfce7; }
+    .btn {
+      background-color: #0a2342;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ffcc00;
+      color: #0a2342;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SELAW</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Daftar Rancangan Peraturan</h1>
+    <table>
+      <tr>
+        <th>Judul</th>
+        <th>Tim Pengusul</th>
+        <th>Status</th>
+        <th>Aksi</th>
+      </tr>
+      <tr>
+        <td>Rancangan Peraturan Disiplin Pegawai</td>
+        <td>Tim Kepegawaian</td>
+        <td><span class="status review">Review</span></td>
+        <td><button class="btn" onclick="window.location.href='detail.html'">Lihat</button></td>
+      </tr>
+      <tr>
+        <td>Keputusan Pengelolaan Aset 2025</td>
+        <td>Tim Keuangan</td>
+        <td><span class="status paraf">Proses Paraf</span></td>
+        <td><button class="btn" onclick="window.location.href='detail.html'">Lihat</button></td>
+      </tr>
+      <tr>
+        <td>Peraturan Penggunaan Ruang Rapat</td>
+        <td>Tim Umum</td>
+        <td><span class="status selesai">Disahkan</span></td>
+        <td><button class="btn" onclick="window.location.href='detail.html'">Lihat</button></td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>

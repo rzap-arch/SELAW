@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pengajuan Rancangan | SELAW</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #001f3f;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #001f3f;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #001f3f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header>SELAW — Form Pengajuan Rancangan</header>
+  
+  <div class="container">
+    <h2>Form Pengajuan Rancangan Peraturan</h2>
+    
+    <form id="formPengajuan">
+      <label>Judul Rancangan</label>
+      <input type="text" placeholder="Contoh: Rancangan Peraturan Disiplin Pegawai" required>
+
+      <label>Tim Pengusul</label>
+      <input type="text" placeholder="Contoh: Tim Kepegawaian / Subtim Hukum Internal" required>
+
+      <label>Nama Penanggung Jawab / Tim Penyusun</label>
+      <input type="text" placeholder="Contoh: Ahmad Riza / Subtim Regulasi Internal" required>
+
+      <label>Tanggal Pengajuan</label>
+      <input type="date" required>
+
+      <label>Ringkasan Rancangan</label>
+      <textarea rows="4" placeholder="Tuliskan ringkasan singkat..." required></textarea>
+
+      <label>Unggah Dokumen (opsional)</label>
+      <input type="file" accept=".pdf,.doc,.docx">
+
+      <button type="submit">Kirim Pengajuan</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("formPengajuan").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Pengajuan berhasil dikirim! (simulasi)");
+    });
+  </script>
+</body>
+</html>

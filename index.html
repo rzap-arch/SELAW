@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SELAW - Sistem Elektronik Layanan Aturan & Wewenang</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+      color: #0a2342;
+    }
+    header {
+      background-color: #0a2342;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #ffcc00;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #0a2342;
+      font-size: 2rem;
+    }
+    p {
+      color: #333;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    .btn {
+      background-color: #0a2342;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ffcc00;
+      color: #0a2342;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SELAW</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tentang</a>
+      <a href="#">Masuk</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Selamat Datang di SELAW</h1>
+    <p>Sistem Elektronik Layanan Aturan & Wewenang — platform kolaboratif untuk pengajuan, review, dan publikasi peraturan internal organisasi Anda.</p>
+    <button class="btn" onclick="window.location.href='dashboard.html'">Masuk ke Sistem</button>
+  </main>
+</body>
+</html>
